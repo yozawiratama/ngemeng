@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="ngemeng.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>NGEMENG</h2>
+        <p>Ngemeng hanya support bahasa <strong>Indonesia</strong>, untuk saat ini.</p>
+        <form id="formNgemeng" role="form">
+            <div class="form-group">
+                <textarea id="txaMsg" class="form-control" style="height:150px" placeholder="Antrian berikutnya, Yoza Wiratama di Meja 1"></textarea>
+            </div>
+            <button type="submit" class="btn btn-block btn-lg btn-default">Speak</button>
+        </form>
+    </div>
+
+    <script>
+        $('#formNgemeng').submit(
+            function (e) {
+                e.preventDefault();
+                ngemeng.speak(document.getElementById('txaMsg').value);
+            });
+    </script>
+</body>
+
+</html>
