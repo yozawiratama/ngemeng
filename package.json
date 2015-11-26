@@ -23,6 +23,9 @@
   "homepage": "https://github.com/yozawiratama/ngemeng#readme",
   "dependencies": {
     "bootstrap": "^3.3.5",
-    "jquery": "^2.1.4"
+    "font-awesome": "^4.4.0",
+    "jquery": "^2.1.4",
+    "jquery.cookie": "^1.4.1",
+    "knockout": "^3.4.0"
   }
 }
